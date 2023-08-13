@@ -4,5 +4,5 @@ function myForEach(array, callback) {
     callback(array[i], i, array);
   }
 }
-function item(item, index, array) {}
+function items(item, index, array) {}
 myForEach(names, item);
