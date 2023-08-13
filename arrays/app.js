@@ -1,10 +1,8 @@
-const array = ["hasan", "omid", "neda", "ali"];
-function myForEach(array, callBack) {
+const names = ["hasan", "omid", "neda", "ali"];
+function myForEach(array, callback) {
   for (let i = 0; i < array.length; i++) {
-    const result = callBack(array[i], i, array);
+    callback(array[i], i, array);
   }
 }
-function printItem(item, index, array) {
-  return `${item}is at index ${index} in ${array}`;
-}
-myForEach(array, printItem);
+function item(item, index, array) {}
+myForEach(names, item);
