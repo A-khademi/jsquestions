@@ -59,3 +59,17 @@ function areAll() {
   return true;
 }
 areAll(numbers);
+////////////////////////////////////////////
+function myFind() {
+  for (let i = 0; i < arr.length; i++) {
+   if(myFunc(arr[i])){
+    break
+   }
+  }
+}
+
+function myFunc(arr) {
+  return  
+}
+myFind(number,myFunc)
+/////////////////////////////////////////////
