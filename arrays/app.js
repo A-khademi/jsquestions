@@ -34,3 +34,15 @@ function mapReplac(num) {
 }
 const newArr = myMap(numbers, mapReplac);
 ///////////////////////////////////////////
+function mySome() {
+  for (let i = 0; i < users.length; i++) {
+    if (myFunc()) {
+      return true;
+    }
+  }
+  return false;
+}
+function myFunc() {
+  return 
+}
+mySome();
