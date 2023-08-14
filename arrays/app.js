@@ -46,3 +46,16 @@ function myFunc() {
   return 
 }
 mySome();
+//////////////////////////////////////////
+function myEvery() {
+  return;
+}
+function areAll() {
+  for (let i = 0; i < numbers.length; i++) {
+    if (!myEvery()) {
+      return false;
+    }
+  }
+  return true;
+}
+areAll(numbers);
