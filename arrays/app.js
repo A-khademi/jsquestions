@@ -77,4 +77,4 @@ function myFunc(arr) {
   return  
 }
 myFind(number,myFunc)
-/////////////////////////////////////////////
+
