@@ -1,4 +1,4 @@
-
+// forEach
 function myForEach(arr, callback) {
   for (let i = 0; i < arr.length; i++) {
     callback(arr[i], i, arr);
@@ -6,7 +6,8 @@ function myForEach(arr, callback) {
 }
 function items(item, index, array) {}
 myForEach(names, item);
-/////////////////////////////////////
+
+//filter
 function myFilter(array, callback) {
   const filteredArray = [];
   for (let i = 0; i < array.length; i++) {
@@ -21,7 +22,8 @@ function checkAge(age) {
   return 
 }
 myFilter(ages, checkAge);
-////////////////////////////////////////
+
+//map
 function myMap(arr, callback) {
   const newArr = [];
   for (let i = 0; i < arr.length; i++) {
@@ -33,7 +35,8 @@ function mapReplac(num) {
   return ;
 }
 const newArr = myMap(numbers, mapReplac);
-///////////////////////////////////////////
+
+//some
 function mySome() {
   for (let i = 0; i < users.length; i++) {
     if (myFunc()) {
@@ -46,7 +49,8 @@ function myFunc() {
   return 
 }
 mySome();
-//////////////////////////////////////////
+
+//every
 function myEvery() {
   return;
 }
@@ -59,7 +63,8 @@ function areAll() {
   return true;
 }
 areAll(numbers);
-////////////////////////////////////////////
+
+//find
 function myFind() {
   for (let i = 0; i < arr.length; i++) {
    if(myFunc(arr[i])){
