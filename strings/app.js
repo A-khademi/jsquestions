@@ -60,6 +60,22 @@ function character(inputString) {
 const input = "";
 const result = character(input);
 //////////////////////////////////////////////////
+function customValidation(input) {
+  const stack = [];
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] === '(') {
+      stack.push('(');
+    } else if (input[i] === ')') {
+      if (stack.length === 0) {
+        return false;
+      } else {
+        stack.pop();
+      }
+    }
+  }
+  return stack.length === 0;
+}
+//////////////////////////////////////////////////
 function removeDuplicate(input) {
   let result = '';
   const characters = new Set();
