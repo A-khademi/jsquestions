@@ -88,3 +88,25 @@ for (let i = 0; i < 10000; i++) {
   limitedLogName();
 }
 /////////////////////////////////////////////////////////
+function rememberOrDo(func) {
+  const memory = new Map();
+
+  return function (...args) {
+    const argsKey = JSON.stringify(args);
+
+    if (memory.has(argsKey)) {
+      return memory.get(argsKey);
+    } else {
+      const result = func(...args);
+      memory.set(argsKey, result);
+      return result;
+    }
+  };
+}
+
+function slowSum(a, b) {
+  return a + b;
+}
+
+const fastSum = rememberOrDo(slowSum);
+////////////////////////////////////////////////////////
